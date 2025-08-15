@@ -1,0 +1,66 @@
+body {
+    background-color: #17252a;
+    color: white;
+  }
+  
+  .header {
+    color: #51f4ec;
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .panel {
+    text-align: center;
+    border: 2px solid #3aaFa9;
+    box-shadow: 5px 5px 5px #3aaFa9;
+    border-radius: 25px;
+    transition: all 0.2s;
+    color: white;
+    padding: 10px;
+  }
+  
+  .panel:hover {
+    box-shadow: 10px 10px 10px #51f4ec;
+    transform: translateY(-5px);
+  }
+  
+  .main {
+    height: 400px;
+    text-align: center;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .highlight {
+    color: #3aaFa9;
+    text-decoration: none;
+  }
+  
+  .slideUp {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .slideUp:hover {
+    background-color: #3aaFa9;
+    color: white;
+  }
+  
+  .description {
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  
+  .footer {
+    text-align: center;
+    color: #3aaFa9;
+  }
+  
+  .footer-logo {
+    cursor: pointer;
+    height: 5%;
+    width: 12%;
+  }
+  

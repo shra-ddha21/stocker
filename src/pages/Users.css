@@ -1,0 +1,51 @@
+body {
+    background-color: #17252A;
+    color: white;
+}
+
+#main {
+    color: white; 
+    border-radius: 25px; 
+    text-align: center; 
+    border: 1px solid #3AAFA9;
+    padding: 20px;
+    font-size: 19px;
+}
+
+#submit {
+    background-color: #3AAFA9;
+    color: #17252A;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    animation: float 0.1s ease-out forwards;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-3px); }
+}
+
+.slideUp {
+    animation: slideUp 1s;
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(+50%); }
+    100% { transform: translateY(0); }
+}
+
+td {
+    border: 1px solid #3AAFA9;
+    padding: 5px;
+    text-align: center;
+}
+
+.user-table {
+    margin-bottom: 20px;
+}

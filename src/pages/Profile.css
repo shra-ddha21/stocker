@@ -1,0 +1,86 @@
+.profile-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile-box {
+    background-color: #17252A;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #3AAFA9;
+}
+
+.profile-table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.label {
+    text-align: right;
+    padding: 10px;
+    color: #51f4ec;
+    font-size: 18px;
+}
+
+.value {
+    text-align: left;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-center {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.btn-action {
+    background-color: #3AAFA9;
+    color: #17252A;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-action:hover {
+    background-color: #51f4ec;
+}
+
+.edit-profile {
+    background-color: #17252A;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid #3AAFA9;
+}
+
+.message-box {
+    background-color: #3AAFA9;
+    color: #17252A;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    margin: 20px auto;
+    width: 40%;
+}
+
+.slideUp {
+    animation: slideUp 1s;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
