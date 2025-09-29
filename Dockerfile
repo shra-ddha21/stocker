@@ -1,11 +1,28 @@
-FROM node:18
+# Use Node.js base image
+FROM node:20-alpine
+
+# Build arguments from Jenkins
+ARG BUILD_ID
+ARG GIT_COMMIT
+
+# Set environment variables
+ENV BUILD_ID=${BUILD_ID}
+ENV GIT_COMMIT=${GIT_COMMIT}
+
+# Set working directory
 WORKDIR /app
 
+# Copy package.json & package-lock.json for dependencies
 COPY package*.json ./
-RUN npm install
 
+# Install dependencies
+RUN npm install --silent
+
+# Copy rest of app
 COPY . .
 
-EXPOSE 3000
+# Expose port used by app
+EXPOSE 5000
 
-CMD ["npm","start"]
+# Start the app
+CMD ["npm", "start"]
